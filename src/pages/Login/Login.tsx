@@ -63,8 +63,10 @@ const Login = ({ }: LoginProps) => {
             </div>
 
             {Object.keys(errors).map((inputName, index) => {
-              if (errors[inputName as keyof FieldErrors<LoginFormInputs>]) {
-                return <div key={index} className="text-red-600 mt-1">{errors[inputName as keyof FieldErrors<LoginFormInputs>]?.message}</div>
+              const inputNameAsErrKey = inputName as keyof FieldErrors<LoginFormInputs>;
+
+              if (errors[inputNameAsErrKey]) {
+                return <div key={index} className="text-red-600 mt-1">{errors[inputNameAsErrKey]?.message}</div>
               }
             })}
             
