@@ -1,4 +1,5 @@
 import EmploymentCard from "components/EmploymentCard/EmploymentCard";
+import EmploymentList from "components/EmploymentList/EmploymentList";
 import { AiFillLinkedin } from "react-icons/ai";
 
 interface HomeProps {}
@@ -13,7 +14,7 @@ const Home = ({ }: HomeProps) => {
 
   return (
     <>
-      <section className="min-h-screen">
+      <section className="">
 
         <div className="text-center p-10">
           <h2 className="text-5xl py-10 text-teal-600 font-medium md:text-6xl dark:text-teal-400">Bryan Maravilla</h2>
@@ -37,14 +38,13 @@ const Home = ({ }: HomeProps) => {
           </p>
         </div>
 
-        <EmploymentCard />
-
         <div className="text-5xl flex justify-center gap-16 py-10 text-gray-600 dark:text-gray-400">
           <AiFillLinkedin onClick={handleLinkedIn} className="cursor-pointer" />
         </div>
 
-
       </section>
+
+      <EmploymentList />
 
         {/* Section 2 */}
       <section>
