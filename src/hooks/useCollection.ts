@@ -9,7 +9,7 @@ export interface UseCollectionType<T> {
 
 export const useCollection = <T>(
     collection: string, 
-    _query?: [string | firebase.firestore.FieldPath, firebase.firestore.WhereFilterOp, any],
+    _query?: [string | firebase.firestore.FieldPath, firebase.firestore.WhereFilterOp, any] | null,
     _orderBy?: [fieldPath: string | firebase.firestore.FieldPath, directionStr?: firebase.firestore.OrderByDirection]
 ): UseCollectionType<T> => {
 
