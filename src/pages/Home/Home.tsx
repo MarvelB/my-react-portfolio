@@ -46,44 +46,6 @@ const Home = ({ }: HomeProps) => {
 
       <EmploymentList />
 
-        {/* Section 2 */}
-      <section>
-
-        <div className="lg:flex gap-10">
-          <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-            <img src="design.png" alt="design" className="h-20 w-20 mx-auto" />
-            <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
-            <p className="py-2">Creating elegant designs suited for your needs</p>
-            <h4 className="py-4 text-teal-600">Design tools I use</h4>
-            <p className="text-gray-800 py-1">Photoshop</p>
-            <p className="text-gray-800 py-1">Ilustrator</p>
-            <p className="text-gray-800 py-1">Figma</p>
-          </div>
-
-          <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-            <img src="code.png" alt="design" className="h-20 w-20 mx-auto" />
-            <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
-            <p className="py-2">Creating elegant designs suited for your needs</p>
-            <h4 className="py-4 text-teal-600">Design tools I use</h4>
-            <p className="text-gray-800 py-1">Photoshop</p>
-            <p className="text-gray-800 py-1">Ilustrator</p>
-            <p className="text-gray-800 py-1">Figma</p>
-          </div>
-
-          <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-            <img src="consulting.png" alt="design" className="h-20 w-20 mx-auto" />
-            <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
-            <p className="py-2">Creating elegant designs suited for your needs</p>
-            <h4 className="py-4 text-teal-600">Design tools I use</h4>
-            <p className="text-gray-800 py-1">Photoshop</p>
-            <p className="text-gray-800 py-1">Ilustrator</p>
-            <p className="text-gray-800 py-1">Figma</p>
-          </div>
-
-        </div>
-
-      </section>
-
       <section>
 
         <div>
