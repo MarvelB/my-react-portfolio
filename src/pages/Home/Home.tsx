@@ -1,8 +1,16 @@
+import EmploymentCard from "components/EmploymentCard/EmploymentCard";
 import { AiFillLinkedin } from "react-icons/ai";
 
 interface HomeProps {}
 
 const Home = ({ }: HomeProps) => {
+
+  const handleLinkedIn = (e: React.MouseEvent<SVGElement>) => {
+    e.preventDefault();
+
+    window.open("https://www.linkedin.com/in/bryan-maravilla-462525144/", "_blank", "noreferrer");
+  }
+
   return (
     <>
       <section className="min-h-screen">
@@ -10,36 +18,36 @@ const Home = ({ }: HomeProps) => {
         <div className="text-center p-10">
           <h2 className="text-5xl py-10 text-teal-600 font-medium md:text-6xl dark:text-teal-400">Bryan Maravilla</h2>
           <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Web Developer</h3>
-          <p className="text-md py-5 leading-8 text-green-800 md:text-xl max-w-xl mx-auto dark:text-gray-200">
+          <p className="text-md py-5 leading-8 text-green-800 md:text-xl  dark:text-gray-200 max-w-4xl mx-auto">
             I am a Web Developer with industry experience developing Serverless SPAs and PWAs, as well as mobile applications using frameworks like Angular, React, and Ionic, in addition to Firebase Hosting. I am also well versed in JavaScript, HTML, CSS, and SCSS.
             <br />
             <br />
             I am proficient with many relational database management systems as well as NoSQL databases such as MongoDB and FireStore.
           </p>
+
         </div>
 
-        <div className="text-5xl flex justify-center gap-16 py-10 text-gray-600 dark:text-gray-400">
-          <AiFillLinkedin />
-        </div>
-
-        <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 my-10 overflow-hidden md:h-96 md:w-96">
-          <img src="dev-ed-wave.png" alt="deved-logo" className="object-cover h-full" />
-        </div>
-
-      </section>
-
-        {/* Section 2 */}
-      <section>
-
-        <div>
-          <h3 className="dark:text-white text-3xl py-1">Mission</h3>
-          <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+        <div className="text-center px-10">
+          <h4 className="dark:text-white text-2xl py-1">Mission</h4>
+          <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 md:text-lg max-w-4xl mx-auto">
             Creating value for organizations through the design and deployment of innovative technology solutions that exceed
             customer’s expectations. Pro-active and diligent by nature, the experience and skills I possess in web development, programming, data
             analysis, reporting, databases and automation together form a broad range of complimentary, universal skills that can
             be applied to many common challenges that I look forward to helping businesses address.
           </p>
         </div>
+
+        <EmploymentCard />
+
+        <div className="text-5xl flex justify-center gap-16 py-10 text-gray-600 dark:text-gray-400">
+          <AiFillLinkedin onClick={handleLinkedIn} className="cursor-pointer" />
+        </div>
+
+
+      </section>
+
+        {/* Section 2 */}
+      <section>
 
         <div className="lg:flex gap-10">
           <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
