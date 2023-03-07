@@ -15,7 +15,7 @@ const NavBar = ({ setDarkMode, showLogout }: NavBarProps) => {
   }
 
   return (
-    <nav className="py-10 mb-12 flex justify-between dark:text-white">
+    <nav className="pt-10 flex justify-between dark:text-white">
       <h1 className="text-xl font-burtons">my portfolio</h1>
       <ul className="flex items-center">
         <li>
