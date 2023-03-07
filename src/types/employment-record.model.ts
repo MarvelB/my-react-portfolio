@@ -4,6 +4,6 @@ export interface EmploymentRecordModel {
     employmentType: string[];
     keyPoints: string[];
     order: number;
-    technologiesIcon: string;
+    technologiesIcon: string[];
     title: string;
 }
