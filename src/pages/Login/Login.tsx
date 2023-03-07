@@ -23,7 +23,7 @@ const Login = ({ }: LoginProps) => {
   return (
     <div className="">
 
-      <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 mx-auto">
+      <div className="max-w-sm bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-sm md:max-w-md xl:p-0 mx-auto">
         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
           <h1 className="text-xl font-bold leading-tight tracking-tight text-teal-600 md:text-2xl text-center">
               Sign in with provided crendentials
