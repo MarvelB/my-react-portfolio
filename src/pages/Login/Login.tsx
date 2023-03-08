@@ -21,12 +21,12 @@ const Login = ({ }: LoginProps) => {
   }
 
   return (
-    <div className="">
+    <div className="mt-20">
 
       <div className="max-w-sm bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-sm md:max-w-md xl:p-0 mx-auto">
         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
           <h1 className="text-xl font-bold leading-tight tracking-tight text-teal-600 md:text-2xl text-center">
-              Sign in with provided crendentials
+              Sign in with provided credentials
           </h1>
           <form onSubmit={handleSubmit(submitForm)}>
 
@@ -71,7 +71,7 @@ const Login = ({ }: LoginProps) => {
                 return null;
               }
             })}
-            
+
             <button className="w-full bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-teal-700 hover:to-teal-700 text-white px-5 rounded-md py-2.5 mt-4">Login</button>
           </form>
         </div>
