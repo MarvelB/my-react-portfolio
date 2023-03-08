@@ -1,4 +1,5 @@
 import EmploymentList from "components/EmploymentList/EmploymentList";
+import ProjectsList from "components/ProjectsList/ProjectsList";
 
 interface HomeProps {}
 
@@ -35,34 +36,7 @@ const Home = ({ }: HomeProps) => {
 
       <EmploymentList />
 
-      <section>
-
-        <div>
-          <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
-        </div>
-
-        <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-          <div className="basis-1/3 flex-1">
-            <img src="web1.png" alt="web1" className="rounded-lg object-cover w-full h-full" />
-          </div>
-          <div className="basis-1/3 flex-1">
-            <img src="web2.png" alt="web2" className="rounded-lg object-cover w-full h-full" />
-          </div>
-          <div className="basis-1/3 flex-1">
-            <img src="web3.png" alt="web3" className="rounded-lg object-cover w-full h-full" />
-          </div>
-          <div className="basis-1/3 flex-1">
-            <img src="web4.png" alt="web4" className="rounded-lg object-cover w-full h-full" />
-          </div>
-          <div className="basis-1/3 flex-1">
-            <img src="web5.png" alt="web5" className="rounded-lg object-cover w-full h-full" />
-          </div>
-          <div className="basis-1/3 flex-1">
-            <img src="web6.png" alt="web6" className="rounded-lg object-cover w-full h-full" />
-          </div>
-        </div>
-
-      </section>
+      <ProjectsList />
     </>
   );
 }
