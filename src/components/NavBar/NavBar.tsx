@@ -1,5 +1,6 @@
 import { projectAuth } from "firebase/config";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { AiFillLinkedin } from "react-icons/ai";
 
 interface NavBarProps {
   setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
@@ -14,6 +15,12 @@ const NavBar = ({ setDarkMode, showLogout }: NavBarProps) => {
     await projectAuth.signOut();
   }
 
+  const handleLinkedIn = (e: React.MouseEvent<SVGElement>) => {
+    e.preventDefault();
+
+    window.open("https://www.linkedin.com/in/bryan-maravilla-462525144/", "_blank", "noreferrer");
+  }
+
   return (
     <nav className="pt-10 flex justify-between dark:text-white">
       <h1 className="text-xl font-burtons">my portfolio</h1>
@@ -22,6 +29,12 @@ const NavBar = ({ setDarkMode, showLogout }: NavBarProps) => {
           <BsFillMoonStarsFill
             className="cursor-pointer text-2xl"
             onClick={() => setDarkMode(prevState => !prevState)}
+          />
+        </li>
+        <li>
+          <AiFillLinkedin
+            className="cursor-pointer ml-8 text-4xl"
+            onClick={handleLinkedIn}
           />
         </li>
         {showLogout && (
