@@ -67,6 +67,8 @@ const Login = ({ }: LoginProps) => {
 
               if (errors[inputNameAsErrKey]) {
                 return <div key={index} className="text-red-600 mt-1">{errors[inputNameAsErrKey]?.message}</div>
+              } else {
+                return null;
               }
             })}
             

@@ -48,7 +48,7 @@ const EmploymentRecordModal = ({ employmentRecord }: EmploymentRecordModalProps)
                       <h4 className="lg:text-lg font-semibold text-gray-700">Some of the technologies used:</h4>
                       <p className="flex flex-row">
                         {employmentRecord.technologiesIcon.map((tech, index) => (
-                          <img src={tech} key={index} className="h-7 w-7 mr-1 md:h-10 md:w-10 md:mr-2" />
+                          <img src={tech} key={index} className="h-7 w-7 mr-1 md:h-10 md:w-10 md:mr-2" alt="Technology used" />
                         ))}
                       </p>
 
