@@ -15,7 +15,7 @@ const EmploymentCard = ({ employmentRecord }: EmploymentCardProps) => {
 
       <div className="flex flex-row">
         {employmentRecord.technologiesIcon.map((tech, index) => (
-          <img src={tech} key={index} className="h-8 w-8 mr-1 md:h-10 md:w-10 md:mr-2" />
+          <img src={tech} key={index} className="h-8 w-8 mr-1 md:h-10 md:w-10 md:mr-2" alt="Technology used" />
         ))}
       </div>
 
