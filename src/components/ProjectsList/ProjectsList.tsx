@@ -14,7 +14,7 @@ const ProjectsList = ({ }: ProjectsListProps) => {
   );
 
   return (
-    <section>
+    <section className="pb-10">
       <div>
         <h3 className="text-xl md:text-2xl py-1 dark:text-white text-center my-10">Personal projects</h3>
       </div>

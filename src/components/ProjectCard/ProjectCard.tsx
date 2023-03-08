@@ -12,7 +12,7 @@ const ProjectCard = ({ projectRecord }: ProjectCardProps) => {
   }
 
   return (
-    <div className="max-w-sm bg-white shadow-lg rounded-xl dark:bg-white basis-1/2 flex-1 mb-10">
+    <div className="max-w-sm bg-white shadow-lg rounded-xl dark:bg-white basis-1/2 flex-1">
       <img
         className="rounded-t-xl cursor-pointer"
         src={projectRecord.pictureUrl}
@@ -26,7 +26,7 @@ const ProjectCard = ({ projectRecord }: ProjectCardProps) => {
             onClick={handleOpenProject}
           >{projectRecord.title}</h5>
 
-          <p className="mb-3 font-normal text-gray-700">{projectRecord.description}</p>
+          <p className="mb-3 font-normal text-gray-700 h-32 overflow-auto">{projectRecord.description}</p>
 
           <button
             type="button"
