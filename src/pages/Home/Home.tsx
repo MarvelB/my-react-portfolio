@@ -20,7 +20,7 @@ const Home = ({ }: HomeProps) => {
           <h2 className="text-5xl py-10 text-teal-600 font-medium md:text-6xl dark:text-teal-400">Bryan Maravilla</h2>
           <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Web Developer</h3>
           <p className="text-md py-5 leading-8 text-green-800 md:text-xl  dark:text-gray-200 max-w-4xl mx-auto">
-            I am a Web Developer with industry experience developing Serverless SPAs and PWAs, as well as mobile applications using frameworks like Angular, React, and Ionic, in addition to Firebase Hosting. I am also well versed in JavaScript, HTML, CSS, and SCSS.
+            I am a Web Developer with over 3 years of industry experience developing Serverless SPAs and PWAs, as well as mobile applications using frameworks like Angular, React, and Ionic, in addition to Firebase Hosting. I am also well versed in JavaScript, HTML, CSS, and SCSS.
             <br />
             <br />
             I am proficient with many relational database management systems as well as NoSQL databases such as MongoDB and FireStore.
@@ -36,10 +36,6 @@ const Home = ({ }: HomeProps) => {
             analysis, reporting, databases and automation together form a broad range of complimentary, universal skills that can
             be applied to many common challenges that I look forward to helping businesses address.
           </p>
-        </div>
-
-        <div className="text-5xl flex justify-center gap-16 py-10 text-gray-600 dark:text-gray-400">
-          <AiFillLinkedin onClick={handleLinkedIn} className="cursor-pointer" />
         </div>
 
       </section>
@@ -74,6 +70,10 @@ const Home = ({ }: HomeProps) => {
         </div>
 
       </section>
+
+      <div className="text-5xl flex justify-center gap-16 py-10 text-gray-600 dark:text-gray-400">
+        <AiFillLinkedin onClick={handleLinkedIn} className="cursor-pointer" />
+      </div>
     </>
   );
 }
