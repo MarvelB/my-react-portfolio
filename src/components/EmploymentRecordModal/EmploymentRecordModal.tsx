@@ -13,7 +13,7 @@ const EmploymentRecordModal = ({ employmentRecord }: EmploymentRecordModalProps)
     <>
       <button
         type="button"
-        className="bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-teal-700 hover:to-teal-700 text-white px-5 rounded-md py-2.5 mt-4"
+        className="bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-teal-700 hover:to-teal-700 text-white text-sm md:text-base px-3 py-1.5 mt-4 md:px-5 rounded-md md:py-2.5 md:mt-4"
         onClick={() => setShowModal(true)}
       >Read more</button>
 
