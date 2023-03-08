@@ -1,3 +1,4 @@
+import EmploymentRecordModal from "components/EmploymentRecordModal/EmploymentRecordModal";
 import { EmploymentRecordModel, WithID } from "types";
 
 interface EmploymentCardProps {
@@ -13,12 +14,12 @@ const EmploymentCard = ({ employmentRecord }: EmploymentCardProps) => {
       <p className="text-gray-800 py-1">{employmentRecord.dates}</p>
 
       <div className="flex flex-row">
-        {employmentRecord.technologiesIcon.map(tech => (
-          <img src={tech} key={tech} className="h-10 w-10 mr-2" />
+        {employmentRecord.technologiesIcon.map((tech, index) => (
+          <img src={tech} key={index} className="h-10 w-10 mr-2" />
         ))}
       </div>
 
-      <button className="bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-teal-700 hover:to-teal-700 text-white px-5 rounded-md py-2.5 mt-4">Read more</button>
+      <EmploymentRecordModal employmentRecord={employmentRecord} />
     </div>
   );
 }
