@@ -10,7 +10,7 @@ const Home = ({ }: HomeProps) => {
       <section className="">
 
         <div className="text-center p-10">
-          <h2 className="text-5xl py-10 text-teal-600 font-medium md:text-6xl dark:text-teal-400">Bryan Maravilla</h2>
+          <h2 className="text-4xl sm:text-5xl py-10 text-teal-600 font-medium md:text-6xl dark:text-teal-400">Bryan Maravilla</h2>
           <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Web Developer</h3>
   
           <p className="text-md py-5 leading-8 text-green-800 md:text-xl  dark:text-gray-200 max-w-4xl mx-auto">
