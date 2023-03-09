@@ -14,7 +14,7 @@ const ProjectCard = ({ projectRecord }: ProjectCardProps) => {
   return (
     <div className="max-w-sm bg-white shadow-lg rounded-xl dark:bg-white basis-1/2 flex-1">
       <img
-        className="rounded-t-xl cursor-pointer"
+        className="rounded-t-xl cursor-pointer w-96 h-48"
         src={projectRecord.pictureUrl}
         alt="project's mini view"
         onClick={handleOpenProject}
