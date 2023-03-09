@@ -19,7 +19,7 @@ const ProjectsList = ({ }: ProjectsListProps) => {
         <h3 className="text-xl md:text-2xl py-1 dark:text-white text-center my-10">Personal projects</h3>
       </div>
 
-      <div className="flex gap-8 flex-row flex-wrap mx-auto items-center justify-center">
+      <div className="flex gap-8 flex-row flex-wrap mx-auto items-center justify-center max-w-7xl">
         {projects && projects.map((project, index) => (
           <ProjectCard key={index} projectRecord={project} />
         ))}

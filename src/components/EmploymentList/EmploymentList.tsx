@@ -18,7 +18,7 @@ const EmploymentList = ({ }: EmploymentListProps) => {
         <h3 className="text-xl md:text-2xl py-1 dark:text-white text-center my-10">Professional experience</h3>
       </div>
 
-      <div className="flex gap-8 flex-row flex-wrap mx-auto items-center justify-center">
+      <div className="flex gap-8 flex-row flex-wrap mx-auto items-center justify-center max-w-7xl">
         {empRecords && empRecords.map(record => (
           <EmploymentCard key={record.id} employmentRecord={record} />
         ))}
