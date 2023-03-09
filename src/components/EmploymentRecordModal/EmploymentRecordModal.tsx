@@ -20,7 +20,7 @@ const EmploymentRecordModal = ({ employmentRecord }: EmploymentRecordModalProps)
       {showModal ? (
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-            <div className="relative w-full max-w-3xl h-auto mx-4">
+            <div className="relative w-full max-w-3xl h-auto mx-4 my-auto">
 
                 <div className="relative bg-white rounded-lg shadow">
 
