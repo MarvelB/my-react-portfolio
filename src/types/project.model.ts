@@ -5,4 +5,5 @@ export interface ProjectModel {
     projectType: string;
     siteUrl: string;
     title: string;
+    githubUrl: string;
 }
